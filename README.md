@@ -20,10 +20,10 @@ GitHub
 Streamlit Community Cloud
 
 Visuals included are:
-> Bar plot 
-> Line plot
-> Bubble chart
-> Pair plot
+Bar plot 
+Line plot
+Bubble chart
+Pair plot
 
  💡 Key Learnings
 Building end-to-end data dashboards using Streamlit
