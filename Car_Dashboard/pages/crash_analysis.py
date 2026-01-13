@@ -85,14 +85,15 @@ st.plotly_chart(fig)
 st.subheader("CONCLUSION📊")
 st.markdown("Majority of states have total crashes between 12 to 18.")
 
-st.markdown("<p style='color:brown; text-align: left; font-size:22px; font-weight:bold'>Insurance premium vs insurance losses: </p>", unsafe_allow_html=True)
-fig = px.scatter(filtered_df,x='ins_premium',y='ins_losses',
-                 color='abbrev',        
-                 labels={'ins_premium':'Insurance Premium','ins_losses':'Insurance Losses','abbrev':'State Abbreviation'}            
-)
+st.markdown("<p style='color:brown; text-align: left; font-size:22px; font-weight:bold'>Alcohol V/S Speeding accidents: </p>", unsafe_allow_html=True)
+fig = px.scatter(filtered_df,x='speeding',
+                 y='alcohol',
+                 color = 'abbrev',size='total',
+                 labels={'speeding':'Speeding Accidents','alcohol':'Alcohol related accidents'}
+    )   
 st.plotly_chart(fig)
 st.subheader("CONCLUSION📊")
-st.markdown("There is a positive correlation between insurance premium and insurance losses.")
+st.markdown("There is a positive correlation between alcohol related and speeding related accidents.")
 
 st.markdown("<p style='color:brown; text-align: left; font-size:22px; font-weight:bold'>Pairplot of car crashes: </p>", unsafe_allow_html=True)
 fig = px.scatter_matrix(filtered_df,
