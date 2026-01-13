@@ -3,9 +3,8 @@
 An interactive data visualization dashboard built using Streamlit to analyze and explore car crash data.
 This project demonstrates my skills in data analysis, visualization, and dashboard development.
 
-🚀 Live App
-🔗 Streamlit App:
-👉 https://crash-analysis-zz.streamlit.app
+- 🔗 Streamlit App:
+- 👉 https://crash-analysis-zz.streamlit.app
 
 ### Dataset
 - Source: seaborn built-in car crash dataset
